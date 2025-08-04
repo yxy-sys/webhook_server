@@ -4,7 +4,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 VERIFY_TOKEN = "ebay_webhook_verify_token_20250804_3qrn_fulfillment_ready"
-"  # 用户指定的 Verification Token
+ # 用户指定的 Verification Token
 
 @app.route("/", methods=["GET"])
 def verify():

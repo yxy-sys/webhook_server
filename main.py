@@ -17,5 +17,8 @@ def verify():
 
 @app.route("/", methods=["POST"])
 def webhook():
-    print("Received webhook event")
+    print("✅ Received webhook POST")
     return "OK", 200
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=10000)
